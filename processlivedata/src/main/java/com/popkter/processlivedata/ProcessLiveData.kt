@@ -16,7 +16,7 @@ class ProcessLiveData(
     private val key: String
 ) {
 
-    private val liveData = SystemUIProviderLiveData(resolver,key)
+    private val liveData = SystemUIProviderLiveData(resolver, key)
 
     fun observe(lifecycleOwner: LifecycleOwner, onChanged: (String) -> Unit) {
         liveData.observe(lifecycleOwner) {
@@ -30,15 +30,15 @@ class ProcessLiveData(
         }
     }
 
-    fun removeObserver(onChanged: (String) -> Unit){
+    fun removeObserver(onChanged: (String) -> Unit) {
         liveData.removeObserver(onChanged)
     }
 
-    fun removeObservers(lifecycleOwner: LifecycleOwner){
+    fun removeObservers(lifecycleOwner: LifecycleOwner) {
         liveData.removeObservers(lifecycleOwner)
     }
 
-    fun postValue(value:String){
+    fun postValue(value: String) {
         liveData.updateConfig(value)
     }
 

@@ -17,7 +17,7 @@ import androidx.room.Query
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-class ProcessProvider : ContentProvider() {
+open class ProcessProvider : ContentProvider() {
 
 
     companion object {
