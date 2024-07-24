@@ -78,7 +78,7 @@
 
 ```groovy
 	dependencies {
-	        implementation 'com.github.popkter:SeekBar:0.1'
+	        implementation 'com.github.popkter:ProcessLiveData:1.1'
 	}
 ```
 	
